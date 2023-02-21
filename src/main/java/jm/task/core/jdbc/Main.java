@@ -11,6 +11,8 @@ public class Main {
 
         UserService userService = new UserServiceImpl();
 
+        Util.getSessionFactory();
+
         userService.createUsersTable();
 
         userService.saveUser("Ivan", "Pavlov", (byte) 52);
@@ -20,6 +22,8 @@ public class Main {
 
         userService.getAllUsers();
 
-        Util.getConnection().close();
+        userService.cleanUsersTable();
+
+        userService.dropUsersTable();
     }
 }

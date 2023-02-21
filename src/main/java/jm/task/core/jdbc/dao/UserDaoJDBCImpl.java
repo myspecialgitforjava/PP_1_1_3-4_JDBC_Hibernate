@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDaoJDBCImpl implements UserDao {
+/*public class UserDaoJDBCImpl implements UserDao {
 
     private static final String SQL_DROP = "DROP TABLE IF EXISTS users";
     private static final String SQL_INSERT = "INSERT INTO users(username, lastname, age) VALUES (?, ?, ?)";
@@ -187,4 +187,4 @@ public class UserDaoJDBCImpl implements UserDao {
             throw new RuntimeException(exc);
         }
     }
-}
+}*/
