@@ -16,6 +16,7 @@ public class Util {
 
         try {
             connection = DriverManager.getConnection(DBURL, USERNAME, PASSWORD);
+            connection.setAutoCommit(false);
         } catch (SQLException e) {
             e.printStackTrace();
         }
